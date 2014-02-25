@@ -95,16 +95,24 @@
     // contentOffset.y = distance from top left hand corner of screen. starts at 0
     // contentSize.height = total height inclusive of all the objects
     // frame.size.height = fixed height of the screen. iphone5 is 568
-    NSLog(@"%f, %f", fabsf(scrollView.contentOffset.y), fabsf(roundf(scrollView.contentSize.height-scrollView.frame.size.height)));
+
     if (fabsf(scrollView.contentOffset.y) >= fabsf(roundf(scrollView.contentSize.height-scrollView.frame.size.height))) {
         if ([NetworkChecker hasConnectivity]) {
-            dispatch_queue_t imageQueue = dispatch_queue_create("com.Scenery.loadImagesQueue", NULL);
-            dispatch_async(imageQueue, ^{
+            // Note to self: interestingly, when this block of code is triggered, it fires off a shit load
+            // of threads
+            
+//            dispatch_queue_t imageQueue = dispatch_queue_create("com.Scenery.loadImagesQueue", NULL);
+//            dispatch_async(imageQueue, ^{
+//                [self loadImages];
+//                dispatch_async(dispatch_get_main_queue(), ^{
+//                    [self.collectionView reloadData];
+//                });
+//            });
+            
                 [self loadImages];
-                dispatch_async(dispatch_get_main_queue(), ^{
-                    [self.collectionView reloadData];
-                });
-            });
+                [self.collectionView reloadData];
+
+
         } else {
             [NetworkChecker showNetworkMessage:@"No network connection found. An Internet connection is required for this application to work" title:@"No Network Connectivity!" delegate:self];
         }
