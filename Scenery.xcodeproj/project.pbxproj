@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2D65525B18BC480000F93A6B /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D65525A18BC480000F93A6B /* Reachability.m */; };
+		2D65525E18BC486000F93A6B /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D65525D18BC486000F93A6B /* SystemConfiguration.framework */; };
+		2D65526118BC48E600F93A6B /* NetworkChecker.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D65526018BC48E600F93A6B /* NetworkChecker.m */; };
 		2DCE306C18B1D08000E3B050 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DCE306B18B1D08000E3B050 /* Foundation.framework */; };
 		2DCE306E18B1D08000E3B050 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DCE306D18B1D08000E3B050 /* CoreGraphics.framework */; };
 		2DCE307018B1D08000E3B050 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DCE306F18B1D08000E3B050 /* UIKit.framework */; };
@@ -39,6 +42,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2D65525918BC480000F93A6B /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		2D65525A18BC480000F93A6B /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		2D65525D18BC486000F93A6B /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		2D65525F18BC48E600F93A6B /* NetworkChecker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkChecker.h; sourceTree = "<group>"; };
+		2D65526018BC48E600F93A6B /* NetworkChecker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetworkChecker.m; sourceTree = "<group>"; };
 		2DCE306818B1D08000E3B050 /* Scenery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Scenery.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2DCE306B18B1D08000E3B050 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		2DCE306D18B1D08000E3B050 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -74,6 +82,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2D65525E18BC486000F93A6B /* SystemConfiguration.framework in Frameworks */,
 				2DCE30A618B1D2D600E3B050 /* ImageIO.framework in Frameworks */,
 				2DCE30A418B1D29D00E3B050 /* SDWebImage.framework in Frameworks */,
 				2DCE306E18B1D08000E3B050 /* CoreGraphics.framework in Frameworks */,
@@ -95,10 +104,57 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2D65525618BC47A200F93A6B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2DCE307D18B1D08000E3B050 /* Main.storyboard */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		2D65525718BC47AD00F93A6B /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				2DCE308018B1D08000E3B050 /* MainViewController.h */,
+				2DCE308118B1D08000E3B050 /* MainViewController.m */,
+				2DCE30A018B1D1B500E3B050 /* DetailViewController.h */,
+				2DCE30A118B1D1B500E3B050 /* DetailViewController.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		2D65525818BC47BE00F93A6B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2DCE30AE18B1D50000E3B050 /* ImageItem.h */,
+				2DCE30AF18B1D50000E3B050 /* ImageItem.m */,
+				2DCE30A718B1D38500E3B050 /* ImgurCell.h */,
+				2DCE30A818B1D38500E3B050 /* ImgurCell.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		2D65525C18BC480C00F93A6B /* Reachability */ = {
+			isa = PBXGroup;
+			children = (
+				2D65525918BC480000F93A6B /* Reachability.h */,
+				2D65525A18BC480000F93A6B /* Reachability.m */,
+			);
+			name = Reachability;
+			sourceTree = "<group>";
+		};
+		2D65526218BC48EA00F93A6B /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				2D65525F18BC48E600F93A6B /* NetworkChecker.h */,
+				2D65526018BC48E600F93A6B /* NetworkChecker.m */,
+			);
+			name = Utilities;
+			sourceTree = "<group>";
+		};
 		2DCE305F18B1D08000E3B050 = {
 			isa = PBXGroup;
 			children = (
-				2DCE30A318B1D29D00E3B050 /* SDWebImage.framework */,
 				2DCE307118B1D08000E3B050 /* Scenery */,
 				2DCE309018B1D08000E3B050 /* SceneryTests */,
 				2DCE306A18B1D08000E3B050 /* Frameworks */,
@@ -118,6 +174,8 @@
 		2DCE306A18B1D08000E3B050 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				2D65525D18BC486000F93A6B /* SystemConfiguration.framework */,
+				2DCE30A318B1D29D00E3B050 /* SDWebImage.framework */,
 				2DCE30A518B1D2D600E3B050 /* ImageIO.framework */,
 				2DCE306B18B1D08000E3B050 /* Foundation.framework */,
 				2DCE306D18B1D08000E3B050 /* CoreGraphics.framework */,
@@ -130,16 +188,12 @@
 		2DCE307118B1D08000E3B050 /* Scenery */ = {
 			isa = PBXGroup;
 			children = (
-				2DCE30AE18B1D50000E3B050 /* ImageItem.h */,
-				2DCE30AF18B1D50000E3B050 /* ImageItem.m */,
-				2DCE30A718B1D38500E3B050 /* ImgurCell.h */,
-				2DCE30A818B1D38500E3B050 /* ImgurCell.m */,
-				2DCE30A018B1D1B500E3B050 /* DetailViewController.h */,
-				2DCE30A118B1D1B500E3B050 /* DetailViewController.m */,
-				2DCE307D18B1D08000E3B050 /* Main.storyboard */,
-				2DCE308018B1D08000E3B050 /* MainViewController.h */,
-				2DCE308118B1D08000E3B050 /* MainViewController.m */,
+				2D65525818BC47BE00F93A6B /* Model */,
+				2D65525618BC47A200F93A6B /* View */,
+				2D65525718BC47AD00F93A6B /* Controllers */,
+				2D65526218BC48EA00F93A6B /* Utilities */,
 				2DCE308318B1D08000E3B050 /* Images.xcassets */,
+				2D65525C18BC480C00F93A6B /* Reachability */,
 				2DCE307218B1D08000E3B050 /* Supporting Files */,
 			);
 			path = Scenery;
@@ -279,7 +333,9 @@
 			files = (
 				2DCE308218B1D08000E3B050 /* MainViewController.m in Sources */,
 				2DCE30A918B1D38500E3B050 /* ImgurCell.m in Sources */,
+				2D65526118BC48E600F93A6B /* NetworkChecker.m in Sources */,
 				2DCE307C18B1D08000E3B050 /* AppDelegate.m in Sources */,
+				2D65525B18BC480000F93A6B /* Reachability.m in Sources */,
 				2DCE30A218B1D1B500E3B050 /* DetailViewController.m in Sources */,
 				2DCE30B018B1D50000E3B050 /* ImageItem.m in Sources */,
 				2DCE307818B1D08000E3B050 /* main.m in Sources */,

@@ -10,6 +10,7 @@
 #import "DetailViewController.h"
 #import "ImgurCell.h"
 #import "ImageItem.h"
+#import "NetworkChecker.h"
 
 @interface MainViewController ()
 @property (nonatomic, strong) NSMutableArray *imageArray;
@@ -36,7 +37,7 @@
 
 - (void)viewWillAppear:(BOOL)animated
 {
-    [self initialDataFetch];
+    [self loadImages];
 }
 
 - (void)viewDidAppear:(BOOL)animated
@@ -54,32 +55,25 @@
     self.navigationController.navigationBar.backgroundColor = [[UIColor blackColor] colorWithAlphaComponent:0.5f];
 }
 
-- (void)initialDataFetch
-{
-    NSString *url = [self getURL:_page];
-    NSData *response = [[self getDataFrom:url] dataUsingEncoding:NSUTF8StringEncoding];
-    NSError *error = [[NSError alloc] init];
-    NSMutableDictionary *imageResponse = [NSJSONSerialization JSONObjectWithData:response
-                                                                         options:NSJSONReadingMutableContainers
-                                                                           error:&error];
-    NSMutableArray *imgurArray = [[NSMutableArray alloc] init];
-    imgurArray = [imageResponse objectForKey:@"data"];
-    [self populateImageArray:imgurArray];
-}
-
 #pragma mark - Collection View
 
-- (void)loadMoreImages
+
+
+- (void)loadImages
 {
-    self.page++;
-    NSString *url = [self getURL:self.page];
-    NSData *response = [[self getDataFrom:url] dataUsingEncoding:NSUTF8StringEncoding];
-    NSError *error = [[NSError alloc] init];
-    NSMutableDictionary *imageResponse = [NSJSONSerialization JSONObjectWithData:response
-                                                                         options:NSJSONReadingMutableContainers
-                                                                           error:&error];
-    NSMutableArray *data = [imageResponse objectForKey:@"data"];
-    [self populateImageArray:data];
+    if ([NetworkChecker hasConnectivity]) {
+        NSString *url = [self getURL:self.page];
+        NSData *response = [[self getDataFrom:url] dataUsingEncoding:NSUTF8StringEncoding];
+        NSError *error = [[NSError alloc] init];
+        NSMutableDictionary *imageResponse = [NSJSONSerialization JSONObjectWithData:response
+                                                                             options:NSJSONReadingMutableContainers
+                                                                               error:&error];
+        NSMutableArray *data = [imageResponse objectForKey:@"data"];
+        [self populateImageArray:data];
+        self.page++;
+    } else {
+        [NetworkChecker showNetworkMessage:@"No network connection found. An Internet connection is required for this application to work" title:@"No Network Connectivity!" delegate:self];
+    }
 }
 
 - (void)populateImageArray:(NSArray *)data
@@ -101,13 +95,17 @@
     // contentSize.height = total height inclusive of all the objects
     // frame.size.height = fixed height of the screen. iphone5 is 568
     if (scrollView.contentOffset.y >= roundf(scrollView.contentSize.height-scrollView.frame.size.height)) {
-        dispatch_queue_t imageQueue = dispatch_queue_create("com.Scenery.loadImagesQueue", NULL);
-        dispatch_async(imageQueue, ^{
-            [self loadMoreImages];
-            dispatch_async(dispatch_get_main_queue(), ^{
-                [self.collectionView reloadData];
+        if ([NetworkChecker hasConnectivity]) {
+            dispatch_queue_t imageQueue = dispatch_queue_create("com.Scenery.loadImagesQueue", NULL);
+            dispatch_async(imageQueue, ^{
+                [self loadImages];
+                dispatch_async(dispatch_get_main_queue(), ^{
+                    [self.collectionView reloadData];
+                });
             });
-        });
+        } else {
+            [NetworkChecker showNetworkMessage:@"No network connection found. An Internet connection is required for this application to work" title:@"No Network Connectivity!" delegate:self];
+        }
     }
 }
 
@@ -149,7 +147,9 @@
                                        [activityIndicator removeFromSuperview];
                                    }];
     } else {
-        [cell setupActivityIndicator];
+        if ([NetworkChecker hasConnectivity]) {
+            [cell setupActivityIndicator];
+        }
     }
     return cell;
 }

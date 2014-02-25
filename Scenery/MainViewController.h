@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface MainViewController : UICollectionViewController
+@interface MainViewController : UICollectionViewController <UIAlertViewDelegate> 
 
 @end
