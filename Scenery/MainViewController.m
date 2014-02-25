@@ -70,8 +70,11 @@
                                                                              options:NSJSONReadingMutableContainers
                                                                                error:&error];
         NSMutableOrderedSet *data = [imageResponse objectForKey:@"data"];
-        [self populateImageArray:data];
-        self.page++;
+        if (data) {
+            [self populateImageArray:data];
+            self.page++;
+        }
+
     } else {
         [NetworkChecker showNetworkMessage:@"No network connection found. An Internet connection is required for this application to work" title:@"No Network Connectivity!" delegate:self];
     }
@@ -127,7 +130,12 @@
 - (NSInteger)collectionView:(UICollectionView *)collectionView
      numberOfItemsInSection:(NSInteger)section
 {
-    return self.imageArray.count + 1;
+    if ([NetworkChecker hasConnectivity]) {
+        return self.imageArray.count + 1;
+    } else {
+        return 0;
+    }
+
 }
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView
