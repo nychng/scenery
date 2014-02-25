@@ -24,7 +24,7 @@
             <objects>
                 <collectionViewController autoresizesArchivedViewToFullSize="NO" id="qUX-q7-2pI" customClass="MainViewController" sceneMemberID="viewController">
                     <collectionView key="view" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" minimumZoomScale="0.0" maximumZoomScale="0.0" dataMode="prototypes" id="LUA-zx-tpH">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="1" minimumInteritemSpacing="0.0" id="0Gt-ow-il9">
                             <size key="itemSize" width="106" height="106"/>
@@ -75,7 +75,7 @@
             <objects>
                 <collectionViewController autoresizesArchivedViewToFullSize="NO" id="DXv-pN-Gko" userLabel="Detail View Controller" customClass="DetailViewController" sceneMemberID="viewController">
                     <collectionView key="view" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" pagingEnabled="YES" minimumZoomScale="0.0" maximumZoomScale="2" dataMode="prototypes" id="Ee6-Mo-QIf">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="6Cq-wW-pLB">
                             <size key="itemSize" width="320" height="568"/>
@@ -85,21 +85,21 @@
                         </collectionViewFlowLayout>
                         <cells>
                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Cell" id="2mk-BP-cLx" customClass="ImgurCell">
-                                <rect key="frame" x="0.0" y="20" width="320" height="568"/>
+                                <rect key="frame" x="0.0" y="64" width="320" height="568"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                     <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" tag="100" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="zaO-uc-J1u">
-                                            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                            <rect key="frame" x="0.0" y="-11" width="320" height="568"/>
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                         </imageView>
-                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="200" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="cvh-iK-7aj">
-                                            <rect key="frame" x="20" y="371" width="280" height="66"/>
+                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="200" contentMode="left" horizontalHuggingPriority="245" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="cvh-iK-7aj">
+                                            <rect key="frame" x="20" y="411" width="280" height="66"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <constraints>
-                                                <constraint firstAttribute="height" constant="66" id="Jnv-Zi-fsO"/>
+                                                <constraint firstAttribute="height" constant="66" id="xwR-Zw-tJi"/>
                                             </constraints>
                                             <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -109,17 +109,13 @@
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </view>
                                 <constraints>
-                                    <constraint firstItem="zaO-uc-J1u" firstAttribute="top" secondItem="2mk-BP-cLx" secondAttribute="top" id="IAe-JW-GP8"/>
-                                    <constraint firstItem="cvh-iK-7aj" firstAttribute="leading" secondItem="2mk-BP-cLx" secondAttribute="leading" constant="20" id="IX0-CJ-zeO"/>
-                                    <constraint firstAttribute="trailing" secondItem="zaO-uc-J1u" secondAttribute="trailing" id="N8u-ek-UP5"/>
-                                    <constraint firstAttribute="bottom" secondItem="zaO-uc-J1u" secondAttribute="bottom" id="S5R-JA-Nml"/>
-                                    <constraint firstItem="cvh-iK-7aj" firstAttribute="centerX" secondItem="zaO-uc-J1u" secondAttribute="centerX" id="flp-0v-S5T"/>
-                                    <constraint firstAttribute="bottom" secondItem="zaO-uc-J1u" secondAttribute="bottom" id="o8J-F1-dSt"/>
-                                    <constraint firstItem="zaO-uc-J1u" firstAttribute="leading" secondItem="2mk-BP-cLx" secondAttribute="leading" id="uHl-jP-c83"/>
-                                    <constraint firstItem="zaO-uc-J1u" firstAttribute="top" secondItem="2mk-BP-cLx" secondAttribute="top" id="vq8-MC-Jz1"/>
-                                    <constraint firstAttribute="bottom" secondItem="cvh-iK-7aj" secondAttribute="bottom" constant="131" id="wMM-ce-DSe"/>
-                                    <constraint firstAttribute="trailing" secondItem="zaO-uc-J1u" secondAttribute="trailing" id="zPs-fL-R4G"/>
-                                    <constraint firstItem="zaO-uc-J1u" firstAttribute="leading" secondItem="2mk-BP-cLx" secondAttribute="leading" id="zsg-dm-DZc"/>
+                                    <constraint firstItem="zaO-uc-J1u" firstAttribute="leading" secondItem="2mk-BP-cLx" secondAttribute="leading" id="8TZ-V9-koB"/>
+                                    <constraint firstItem="cvh-iK-7aj" firstAttribute="leading" secondItem="2mk-BP-cLx" secondAttribute="leading" constant="20" id="AeH-vl-KP5"/>
+                                    <constraint firstItem="zaO-uc-J1u" firstAttribute="top" secondItem="2mk-BP-cLx" secondAttribute="top" constant="-11" id="DPw-Fo-iLr"/>
+                                    <constraint firstAttribute="bottom" secondItem="cvh-iK-7aj" secondAttribute="bottom" constant="91" id="IYM-nQ-dSl"/>
+                                    <constraint firstAttribute="bottom" secondItem="zaO-uc-J1u" secondAttribute="bottom" constant="11" id="c7H-ZN-cOv"/>
+                                    <constraint firstAttribute="trailing" secondItem="zaO-uc-J1u" secondAttribute="trailing" id="i7l-fo-4hD"/>
+                                    <constraint firstItem="zaO-uc-J1u" firstAttribute="centerX" secondItem="cvh-iK-7aj" secondAttribute="centerX" id="jIh-Po-e4j"/>
                                 </constraints>
                             </collectionViewCell>
                         </cells>
@@ -144,6 +140,6 @@
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
-        <simulatedScreenMetrics key="destination"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
 </document>
