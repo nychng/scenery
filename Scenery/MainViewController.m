@@ -40,9 +40,10 @@
     [self loadImages];
 }
 
-- (void)viewDidAppear:(BOOL)animated
+- (void)viewDidLoad
 {
-    [super viewDidAppear:animated];
+    [super viewDidLoad];
+    self.page = 1;
 }
 
 - (void)didReceiveMemoryWarning
@@ -68,7 +69,7 @@
         NSMutableDictionary *imageResponse = [NSJSONSerialization JSONObjectWithData:response
                                                                              options:NSJSONReadingMutableContainers
                                                                                error:&error];
-        NSMutableArray *data = [imageResponse objectForKey:@"data"];
+        NSMutableOrderedSet *data = [imageResponse objectForKey:@"data"];
         [self populateImageArray:data];
         self.page++;
     } else {
@@ -76,7 +77,7 @@
     }
 }
 
-- (void)populateImageArray:(NSArray *)data
+- (void)populateImageArray:(NSMutableOrderedSet *)data
 {
     for (NSDictionary *obj in data) {
         NSString *title = [obj objectForKey:@"title"];
@@ -94,7 +95,8 @@
     // contentOffset.y = distance from top left hand corner of screen. starts at 0
     // contentSize.height = total height inclusive of all the objects
     // frame.size.height = fixed height of the screen. iphone5 is 568
-    if (scrollView.contentOffset.y >= roundf(scrollView.contentSize.height-scrollView.frame.size.height)) {
+    NSLog(@"%f, %f", fabsf(scrollView.contentOffset.y), fabsf(roundf(scrollView.contentSize.height-scrollView.frame.size.height)));
+    if (fabsf(scrollView.contentOffset.y) >= fabsf(roundf(scrollView.contentSize.height-scrollView.frame.size.height))) {
         if ([NetworkChecker hasConnectivity]) {
             dispatch_queue_t imageQueue = dispatch_queue_create("com.Scenery.loadImagesQueue", NULL);
             dispatch_async(imageQueue, ^{
