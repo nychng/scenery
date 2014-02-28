@@ -35,15 +35,11 @@
     return _page;
 }
 
-- (void)viewWillAppear:(BOOL)animated
-{
-    [self loadImages];
-}
-
 - (void)viewDidLoad
 {
     [super viewDidLoad];
     self.page = 1;
+    [self loadImages];
 }
 
 - (void)didReceiveMemoryWarning
