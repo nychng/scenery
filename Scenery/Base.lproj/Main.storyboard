@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="13B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="Xzh-Vk-BFO">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5053" systemVersion="13C64" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="Xzh-Vk-BFO">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
     </dependencies>
     <scenes>
         <!--Navigation Controller-->
@@ -27,21 +27,21 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="1" minimumInteritemSpacing="0.0" id="0Gt-ow-il9">
-                            <size key="itemSize" width="106" height="106"/>
+                            <size key="itemSize" width="106" height="174"/>
                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         </collectionViewFlowLayout>
                         <cells>
                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Cell" id="GgE-kE-HRN" customClass="ImgurCell">
-                                <rect key="frame" x="0.0" y="64" width="106" height="106"/>
+                                <rect key="frame" x="0.0" y="64" width="106" height="174"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                    <rect key="frame" x="0.0" y="0.0" width="106" height="106"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="106" height="174"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" tag="100" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tLL-F0-U7v">
-                                            <rect key="frame" x="0.0" y="0.0" width="106" height="106"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="106" height="174"/>
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                         </imageView>
                                         <activityIndicatorView opaque="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" hidesWhenStopped="YES" animating="YES" style="white" translatesAutoresizingMaskIntoConstraints="NO" id="ONc-qo-FTw">
@@ -75,7 +75,7 @@
             <objects>
                 <collectionViewController autoresizesArchivedViewToFullSize="NO" id="DXv-pN-Gko" userLabel="Detail View Controller" customClass="DetailViewController" sceneMemberID="viewController">
                     <collectionView key="view" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" pagingEnabled="YES" minimumZoomScale="0.0" maximumZoomScale="2" dataMode="prototypes" id="Ee6-Mo-QIf">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="6Cq-wW-pLB">
                             <size key="itemSize" width="320" height="568"/>
@@ -84,39 +84,44 @@
                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         </collectionViewFlowLayout>
                         <cells>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Cell" id="2mk-BP-cLx" customClass="ImgurCell">
-                                <rect key="frame" x="0.0" y="64" width="320" height="568"/>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" reuseIdentifier="Cell" id="2mk-BP-cLx" customClass="ImgurCellDetail">
+                                <rect key="frame" x="0.0" y="-32" width="320" height="568"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                     <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView userInteractionEnabled="NO" tag="100" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="zaO-uc-J1u">
-                                            <rect key="frame" x="0.0" y="-11" width="320" height="568"/>
+                                        <imageView userInteractionEnabled="NO" tag="100" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zaO-uc-J1u">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                         </imageView>
-                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="200" contentMode="left" horizontalHuggingPriority="245" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="cvh-iK-7aj">
-                                            <rect key="frame" x="20" y="411" width="280" height="66"/>
+                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" lineBreakMode="characterWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="320" translatesAutoresizingMaskIntoConstraints="NO" id="qNv-rw-Lm1">
+                                            <rect key="frame" x="0.0" y="460" width="320" height="17"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <constraints>
-                                                <constraint firstAttribute="height" constant="66" id="xwR-Zw-tJi"/>
-                                            </constraints>
-                                            <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
-                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             <nil key="highlightedColor"/>
                                         </label>
+                                        <activityIndicatorView opaque="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" misplaced="YES" hidesWhenStopped="YES" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="cZw-IS-I0j">
+                                            <rect key="frame" x="142" y="243" width="37" height="37"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        </activityIndicatorView>
                                     </subviews>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </view>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstItem="zaO-uc-J1u" firstAttribute="leading" secondItem="2mk-BP-cLx" secondAttribute="leading" id="8TZ-V9-koB"/>
-                                    <constraint firstItem="cvh-iK-7aj" firstAttribute="leading" secondItem="2mk-BP-cLx" secondAttribute="leading" constant="20" id="AeH-vl-KP5"/>
-                                    <constraint firstItem="zaO-uc-J1u" firstAttribute="top" secondItem="2mk-BP-cLx" secondAttribute="top" constant="-11" id="DPw-Fo-iLr"/>
-                                    <constraint firstAttribute="bottom" secondItem="cvh-iK-7aj" secondAttribute="bottom" constant="91" id="IYM-nQ-dSl"/>
-                                    <constraint firstAttribute="bottom" secondItem="zaO-uc-J1u" secondAttribute="bottom" constant="11" id="c7H-ZN-cOv"/>
-                                    <constraint firstAttribute="trailing" secondItem="zaO-uc-J1u" secondAttribute="trailing" id="i7l-fo-4hD"/>
-                                    <constraint firstItem="zaO-uc-J1u" firstAttribute="centerX" secondItem="cvh-iK-7aj" secondAttribute="centerX" id="jIh-Po-e4j"/>
+                                    <constraint firstAttribute="centerX" secondItem="cZw-IS-I0j" secondAttribute="centerX" id="Dzv-iI-Adx"/>
+                                    <constraint firstAttribute="trailing" secondItem="qNv-rw-Lm1" secondAttribute="trailing" id="Z9b-Ta-KdS"/>
+                                    <constraint firstItem="qNv-rw-Lm1" firstAttribute="leading" secondItem="2mk-BP-cLx" secondAttribute="leading" id="aAg-yG-rXc"/>
+                                    <constraint firstAttribute="bottom" secondItem="qNv-rw-Lm1" secondAttribute="bottom" constant="47" id="qZb-GB-VNS"/>
+                                    <constraint firstAttribute="centerY" secondItem="cZw-IS-I0j" secondAttribute="centerY" id="wkW-cF-CE3"/>
                                 </constraints>
+                                <connections>
+                                    <outlet property="activityIndicator" destination="cZw-IS-I0j" id="NoE-fq-CIV"/>
+                                    <outlet property="imageView" destination="zaO-uc-J1u" id="wdQ-SC-gdZ"/>
+                                    <outlet property="title" destination="qNv-rw-Lm1" id="9pE-8j-ki2"/>
+                                </connections>
                             </collectionViewCell>
                         </cells>
                         <connections>
@@ -124,6 +129,7 @@
                             <outlet property="delegate" destination="DXv-pN-Gko" id="nWn-3l-ufQ"/>
                         </connections>
                     </collectionView>
+                    <extendedEdge key="edgesForExtendedLayout"/>
                     <navigationItem key="navigationItem" id="1Bn-HG-h3F">
                         <barButtonItem key="rightBarButtonItem" systemItem="save" id="odb-Mn-yDu">
                             <connections>
@@ -131,6 +137,7 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <size key="freeformSize" width="320" height="1000"/>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8Fn-6x-bpJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

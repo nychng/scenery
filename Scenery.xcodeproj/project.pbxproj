@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2D069F8F18ED095C00AA8662 /* SDWebImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D069F8E18ED095C00AA8662 /* SDWebImage.framework */; };
+		2D069F9118ED0E6900AA8662 /* iAd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D069F9018ED0E6800AA8662 /* iAd.framework */; };
+		2D069F9718ED194A00AA8662 /* ImgurCellDetail.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D069F9618ED194A00AA8662 /* ImgurCellDetail.m */; };
 		2D65525B18BC480000F93A6B /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D65525A18BC480000F93A6B /* Reachability.m */; };
 		2D65525E18BC486000F93A6B /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D65525D18BC486000F93A6B /* SystemConfiguration.framework */; };
 		2D65526118BC48E600F93A6B /* NetworkChecker.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D65526018BC48E600F93A6B /* NetworkChecker.m */; };
@@ -25,7 +28,6 @@
 		2DCE309518B1D08000E3B050 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2DCE309318B1D08000E3B050 /* InfoPlist.strings */; };
 		2DCE309718B1D08000E3B050 /* SceneryTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DCE309618B1D08000E3B050 /* SceneryTests.m */; };
 		2DCE30A218B1D1B500E3B050 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DCE30A118B1D1B500E3B050 /* DetailViewController.m */; };
-		2DCE30A418B1D29D00E3B050 /* SDWebImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DCE30A318B1D29D00E3B050 /* SDWebImage.framework */; };
 		2DCE30A618B1D2D600E3B050 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DCE30A518B1D2D600E3B050 /* ImageIO.framework */; };
 		2DCE30A918B1D38500E3B050 /* ImgurCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DCE30A818B1D38500E3B050 /* ImgurCell.m */; };
 		2DCE30B018B1D50000E3B050 /* ImageItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DCE30AF18B1D50000E3B050 /* ImageItem.m */; };
@@ -42,6 +44,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2D069F8E18ED095C00AA8662 /* SDWebImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SDWebImage.framework; sourceTree = "<group>"; };
+		2D069F9018ED0E6800AA8662 /* iAd.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iAd.framework; path = System/Library/Frameworks/iAd.framework; sourceTree = SDKROOT; };
+		2D069F9518ED194A00AA8662 /* ImgurCellDetail.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImgurCellDetail.h; sourceTree = "<group>"; };
+		2D069F9618ED194A00AA8662 /* ImgurCellDetail.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImgurCellDetail.m; sourceTree = "<group>"; };
 		2D65525918BC480000F93A6B /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
 		2D65525A18BC480000F93A6B /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
 		2D65525D18BC486000F93A6B /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
@@ -68,7 +74,6 @@
 		2DCE309618B1D08000E3B050 /* SceneryTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneryTests.m; sourceTree = "<group>"; };
 		2DCE30A018B1D1B500E3B050 /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
 		2DCE30A118B1D1B500E3B050 /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
-		2DCE30A318B1D29D00E3B050 /* SDWebImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SDWebImage.framework; sourceTree = "<group>"; };
 		2DCE30A518B1D2D600E3B050 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
 		2DCE30A718B1D38500E3B050 /* ImgurCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImgurCell.h; sourceTree = "<group>"; };
 		2DCE30A818B1D38500E3B050 /* ImgurCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImgurCell.m; sourceTree = "<group>"; };
@@ -82,11 +87,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2D069F9118ED0E6900AA8662 /* iAd.framework in Frameworks */,
 				2D65525E18BC486000F93A6B /* SystemConfiguration.framework in Frameworks */,
 				2DCE30A618B1D2D600E3B050 /* ImageIO.framework in Frameworks */,
-				2DCE30A418B1D29D00E3B050 /* SDWebImage.framework in Frameworks */,
 				2DCE306E18B1D08000E3B050 /* CoreGraphics.framework in Frameworks */,
 				2DCE307018B1D08000E3B050 /* UIKit.framework in Frameworks */,
+				2D069F8F18ED095C00AA8662 /* SDWebImage.framework in Frameworks */,
 				2DCE306C18B1D08000E3B050 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -130,6 +136,8 @@
 				2DCE30AF18B1D50000E3B050 /* ImageItem.m */,
 				2DCE30A718B1D38500E3B050 /* ImgurCell.h */,
 				2DCE30A818B1D38500E3B050 /* ImgurCell.m */,
+				2D069F9518ED194A00AA8662 /* ImgurCellDetail.h */,
+				2D069F9618ED194A00AA8662 /* ImgurCellDetail.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -174,8 +182,9 @@
 		2DCE306A18B1D08000E3B050 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				2D069F9018ED0E6800AA8662 /* iAd.framework */,
+				2D069F8E18ED095C00AA8662 /* SDWebImage.framework */,
 				2D65525D18BC486000F93A6B /* SystemConfiguration.framework */,
-				2DCE30A318B1D29D00E3B050 /* SDWebImage.framework */,
 				2DCE30A518B1D2D600E3B050 /* ImageIO.framework */,
 				2DCE306B18B1D08000E3B050 /* Foundation.framework */,
 				2DCE306D18B1D08000E3B050 /* CoreGraphics.framework */,
@@ -339,6 +348,7 @@
 				2DCE30A218B1D1B500E3B050 /* DetailViewController.m in Sources */,
 				2DCE30B018B1D50000E3B050 /* ImageItem.m in Sources */,
 				2DCE307818B1D08000E3B050 /* main.m in Sources */,
+				2D069F9718ED194A00AA8662 /* ImgurCellDetail.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -470,10 +480,12 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					/Users/nai/Developer/Scenery,
+					"$(PROJECT_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Scenery/Scenery-Prefix.pch";
 				INFOPLIST_FILE = "Scenery/Scenery-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -491,10 +503,12 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					/Users/nai/Developer/Scenery,
+					"$(PROJECT_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Scenery/Scenery-Prefix.pch";
 				INFOPLIST_FILE = "Scenery/Scenery-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";

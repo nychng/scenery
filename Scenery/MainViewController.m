@@ -12,6 +12,7 @@
 #import "ImageItem.h"
 #import "NetworkChecker.h"
 
+
 @interface MainViewController ()
 @property (nonatomic, strong) NSMutableArray *imageArray;
 @property (nonatomic) int page;
@@ -145,20 +146,20 @@
         ImageItem *image = [self.imageArray objectAtIndex:indexPath.row];
         [image getSmallThumbnailURL];
         
-        UIActivityIndicatorView *activityIndicator = cell.activityIndicator;
-        if (activityIndicator) {
-            [activityIndicator removeFromSuperview];
+        if (cell.activityIndicator) {
+            [cell.activityIndicator removeFromSuperview];
         }
         [cell setupActivityIndicator];
+        __weak typeof(ImgurCell) *weakCell = cell;
         [cell.thumbnailImage setImageWithURL:[image getSmallThumbnailURL]
                             placeholderImage:nil
                                      options:SDWebImageProgressiveDownload
-                                    progress:^(NSUInteger receivedSize, long long expectedSize) {
-                                        [activityIndicator startAnimating];
+                                    progress:^(NSInteger receivedSize, NSInteger expectedSize) {
+                                        [weakCell.activityIndicator startAnimating];
                                     }
                                    completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType) {
-                                       [activityIndicator stopAnimating];
-                                       [activityIndicator removeFromSuperview];
+                                       [weakCell.activityIndicator stopAnimating];
+                                       [weakCell.activityIndicator removeFromSuperview];
                                    }];
     } else {
         if ([NetworkChecker hasConnectivity]) {
@@ -196,7 +197,7 @@
                                                   returningResponse:&responseCode
                                                               error:&error];
     if([responseCode statusCode] != 200){
-        NSLog(@"Error getting %@, HTTP status code %d", url, [responseCode statusCode]);
+        NSLog(@"Error getting %@, HTTP status code %ld", url, (long)[responseCode statusCode]);
         return nil;
     }
     
@@ -214,4 +215,5 @@
 - (BOOL)prefersStatusBarHidden {
     return YES;
 }
+
 @end
