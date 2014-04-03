@@ -95,14 +95,14 @@
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                         </imageView>
-                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" lineBreakMode="characterWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="320" translatesAutoresizingMaskIntoConstraints="NO" id="qNv-rw-Lm1">
-                                            <rect key="frame" x="0.0" y="460" width="320" height="17"/>
+                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="characterWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="320" translatesAutoresizingMaskIntoConstraints="NO" id="qNv-rw-Lm1">
+                                            <rect key="frame" x="0.0" y="504" width="320" height="17"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                             <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <activityIndicatorView opaque="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" misplaced="YES" hidesWhenStopped="YES" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="cZw-IS-I0j">
+                                        <activityIndicatorView opaque="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="cZw-IS-I0j">
                                             <rect key="frame" x="142" y="243" width="37" height="37"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         </activityIndicatorView>
@@ -115,7 +115,7 @@
                                     <constraint firstAttribute="trailing" secondItem="qNv-rw-Lm1" secondAttribute="trailing" id="Z9b-Ta-KdS"/>
                                     <constraint firstItem="qNv-rw-Lm1" firstAttribute="leading" secondItem="2mk-BP-cLx" secondAttribute="leading" id="aAg-yG-rXc"/>
                                     <constraint firstAttribute="bottom" secondItem="qNv-rw-Lm1" secondAttribute="bottom" constant="47" id="qZb-GB-VNS"/>
-                                    <constraint firstAttribute="centerY" secondItem="cZw-IS-I0j" secondAttribute="centerY" id="wkW-cF-CE3"/>
+                                    <constraint firstAttribute="centerY" secondItem="cZw-IS-I0j" secondAttribute="centerY" constant="22.5" id="wkW-cF-CE3"/>
                                 </constraints>
                                 <connections>
                                     <outlet property="activityIndicator" destination="cZw-IS-I0j" id="NoE-fq-CIV"/>

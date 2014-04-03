@@ -3,7 +3,7 @@
     {
       "size" : "29x29",
       "idiom" : "iphone",
-      "filename" : "EarthPorn-App-Icon-58.png",
+      "filename" : "EarthPorn-App-Icon-58-1.png",
       "scale" : "2x"
     },
     {
@@ -16,6 +16,42 @@
       "size" : "60x60",
       "idiom" : "iphone",
       "filename" : "EarthPorn-App-Icon-120.png",
+      "scale" : "2x"
+    },
+    {
+      "size" : "29x29",
+      "idiom" : "ipad",
+      "filename" : "EarthPorn-App-Icon-29.png",
+      "scale" : "1x"
+    },
+    {
+      "size" : "29x29",
+      "idiom" : "ipad",
+      "filename" : "EarthPorn-App-Icon-58.png",
+      "scale" : "2x"
+    },
+    {
+      "size" : "40x40",
+      "idiom" : "ipad",
+      "filename" : "EarthPorn-App-Icon-40.png",
+      "scale" : "1x"
+    },
+    {
+      "size" : "40x40",
+      "idiom" : "ipad",
+      "filename" : "EarthPorn-App-Icon-80-1.png",
+      "scale" : "2x"
+    },
+    {
+      "size" : "76x76",
+      "idiom" : "ipad",
+      "filename" : "AppIcon-76.png",
+      "scale" : "1x"
+    },
+    {
+      "size" : "76x76",
+      "idiom" : "ipad",
+      "filename" : "AppIcon-152.png",
       "scale" : "2x"
     }
   ],
