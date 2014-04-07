@@ -73,36 +73,36 @@
         <!--Detail View Controller-->
         <scene sceneID="s6a-cy-UpB">
             <objects>
-                <collectionViewController autoresizesArchivedViewToFullSize="NO" id="LsK-6R-zNr" userLabel="Detail View Controller" customClass="DetailViewController" sceneMemberID="viewController">
+                <collectionViewController autoresizesArchivedViewToFullSize="NO" automaticallyAdjustsScrollViewInsets="NO" id="LsK-6R-zNr" userLabel="Detail View Controller" customClass="DetailViewController" sceneMemberID="viewController">
                     <collectionView key="view" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" pagingEnabled="YES" minimumZoomScale="0.0" maximumZoomScale="2" dataMode="prototypes" id="azg-Lp-THw">
-                        <rect key="frame" x="0.0" y="64" width="768" height="960"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="kRx-Ct-2q3">
-                            <size key="itemSize" width="768" height="960"/>
+                            <size key="itemSize" width="768" height="1024"/>
                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         </collectionViewFlowLayout>
                         <cells>
                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" reuseIdentifier="Cell" id="Pt5-Rr-NXN" customClass="ImgurCellDetail">
-                                <rect key="frame" x="0.0" y="0.0" width="768" height="960"/>
+                                <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                    <rect key="frame" x="0.0" y="0.0" width="768" height="960"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" tag="100" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="689-wW-jRb">
-                                            <rect key="frame" x="0.0" y="0.0" width="768" height="1004"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="768" height="1068"/>
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                         </imageView>
                                         <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="characterWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="768" translatesAutoresizingMaskIntoConstraints="NO" id="qbK-ur-ork">
-                                            <rect key="frame" x="0.0" y="886" width="768" height="17"/>
+                                            <rect key="frame" x="0.0" y="977" width="768" height="17"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                             <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <activityIndicatorView opaque="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="iy6-wi-vtq">
+                                        <activityIndicatorView opaque="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" misplaced="YES" hidesWhenStopped="YES" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="iy6-wi-vtq">
                                             <rect key="frame" x="366" y="439" width="37" height="37"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         </activityIndicatorView>
@@ -111,7 +111,7 @@
                                 </view>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="bottom" secondItem="qbK-ur-ork" secondAttribute="bottom" constant="57" id="9am-C5-7sb"/>
+                                    <constraint firstAttribute="bottom" secondItem="qbK-ur-ork" secondAttribute="bottom" constant="30" id="9am-C5-7sb"/>
                                     <constraint firstAttribute="centerY" secondItem="iy6-wi-vtq" secondAttribute="centerY" constant="22.5" id="QfS-jR-WiG"/>
                                     <constraint firstItem="qbK-ur-ork" firstAttribute="leading" secondItem="Pt5-Rr-NXN" secondAttribute="leading" id="SIe-Zc-Wov"/>
                                     <constraint firstAttribute="centerX" secondItem="iy6-wi-vtq" secondAttribute="centerX" id="f6V-iW-pAw"/>
@@ -129,7 +129,7 @@
                             <outlet property="delegate" destination="LsK-6R-zNr" id="ieH-Zj-L7u"/>
                         </connections>
                     </collectionView>
-                    <extendedEdge key="edgesForExtendedLayout"/>
+                    <extendedEdge key="edgesForExtendedLayout" top="YES"/>
                     <navigationItem key="navigationItem" id="26R-lN-PtI">
                         <barButtonItem key="rightBarButtonItem" systemItem="save" id="b4u-wz-oUu">
                             <connections>
