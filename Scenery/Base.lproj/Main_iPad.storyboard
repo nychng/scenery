@@ -96,14 +96,14 @@
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                         </imageView>
                                         <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="characterWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="768" translatesAutoresizingMaskIntoConstraints="NO" id="qbK-ur-ork">
-                                            <rect key="frame" x="0.0" y="977" width="768" height="17"/>
+                                            <rect key="frame" x="0.0" y="974" width="768" height="17"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                             <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <activityIndicatorView opaque="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" misplaced="YES" hidesWhenStopped="YES" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="iy6-wi-vtq">
-                                            <rect key="frame" x="366" y="439" width="37" height="37"/>
+                                        <activityIndicatorView opaque="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="iy6-wi-vtq">
+                                            <rect key="frame" x="366" y="471" width="37" height="37"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         </activityIndicatorView>
                                     </subviews>
@@ -111,7 +111,7 @@
                                 </view>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="bottom" secondItem="qbK-ur-ork" secondAttribute="bottom" constant="30" id="9am-C5-7sb"/>
+                                    <constraint firstAttribute="bottom" secondItem="qbK-ur-ork" secondAttribute="bottom" constant="33" id="9am-C5-7sb"/>
                                     <constraint firstAttribute="centerY" secondItem="iy6-wi-vtq" secondAttribute="centerY" constant="22.5" id="QfS-jR-WiG"/>
                                     <constraint firstItem="qbK-ur-ork" firstAttribute="leading" secondItem="Pt5-Rr-NXN" secondAttribute="leading" id="SIe-Zc-Wov"/>
                                     <constraint firstAttribute="centerX" secondItem="iy6-wi-vtq" secondAttribute="centerX" id="f6V-iW-pAw"/>
