@@ -8,8 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		2D069F9118ED0E6900AA8662 /* iAd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D069F9018ED0E6800AA8662 /* iAd.framework */; };
-		2D069F9718ED194A00AA8662 /* ImgurCellDetail.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D069F9618ED194A00AA8662 /* ImgurCellDetail.m */; };
-		2D069F9B18ED3B2F00AA8662 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D069F9918ED3B2F00AA8662 /* Main_iPad.storyboard */; };
+		2D390F55190D0EBF005A1965 /* ImageItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D390F50190D0EBF005A1965 /* ImageItem.m */; };
+		2D390F56190D0EBF005A1965 /* ImgurCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D390F52190D0EBF005A1965 /* ImgurCell.m */; };
+		2D390F57190D0EBF005A1965 /* ImgurCellDetail.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D390F54190D0EBF005A1965 /* ImgurCellDetail.m */; };
+		2D390F5A190D0EC6005A1965 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D390F58190D0EC6005A1965 /* Main_iPhone.storyboard */; };
+		2D390F5B190D0EC6005A1965 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D390F59190D0EC6005A1965 /* Main_iPad.storyboard */; };
+		2D390F60190D0ED0005A1965 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D390F5D190D0ED0005A1965 /* MainViewController.m */; };
+		2D390F61190D0ED0005A1965 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D390F5F190D0ED0005A1965 /* DetailViewController.m */; };
 		2D65525B18BC480000F93A6B /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D65525A18BC480000F93A6B /* Reachability.m */; };
 		2D65525E18BC486000F93A6B /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D65525D18BC486000F93A6B /* SystemConfiguration.framework */; };
 		2D65526118BC48E600F93A6B /* NetworkChecker.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D65526018BC48E600F93A6B /* NetworkChecker.m */; };
@@ -19,18 +24,13 @@
 		2DCE307618B1D08000E3B050 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2DCE307418B1D08000E3B050 /* InfoPlist.strings */; };
 		2DCE307818B1D08000E3B050 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DCE307718B1D08000E3B050 /* main.m */; };
 		2DCE307C18B1D08000E3B050 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DCE307B18B1D08000E3B050 /* AppDelegate.m */; };
-		2DCE307F18B1D08000E3B050 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2DCE307D18B1D08000E3B050 /* Main_iPhone.storyboard */; };
-		2DCE308218B1D08000E3B050 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DCE308118B1D08000E3B050 /* MainViewController.m */; };
 		2DCE308418B1D08000E3B050 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2DCE308318B1D08000E3B050 /* Images.xcassets */; };
 		2DCE308B18B1D08000E3B050 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DCE308A18B1D08000E3B050 /* XCTest.framework */; };
 		2DCE308C18B1D08000E3B050 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DCE306B18B1D08000E3B050 /* Foundation.framework */; };
 		2DCE308D18B1D08000E3B050 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DCE306F18B1D08000E3B050 /* UIKit.framework */; };
 		2DCE309518B1D08000E3B050 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2DCE309318B1D08000E3B050 /* InfoPlist.strings */; };
 		2DCE309718B1D08000E3B050 /* SceneryTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DCE309618B1D08000E3B050 /* SceneryTests.m */; };
-		2DCE30A218B1D1B500E3B050 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DCE30A118B1D1B500E3B050 /* DetailViewController.m */; };
 		2DCE30A618B1D2D600E3B050 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DCE30A518B1D2D600E3B050 /* ImageIO.framework */; };
-		2DCE30A918B1D38500E3B050 /* ImgurCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DCE30A818B1D38500E3B050 /* ImgurCell.m */; };
-		2DCE30B018B1D50000E3B050 /* ImageItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DCE30AF18B1D50000E3B050 /* ImageItem.m */; };
 		2DEA10521902744E00A6566C /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DEA10511902744E00A6566C /* Security.framework */; };
 		EAEBF9029A594BEB980E9B82 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 18CED627AE694E3CA6EB6966 /* libPods.a */; };
 /* End PBXBuildFile section */
@@ -49,9 +49,18 @@
 		18CED627AE694E3CA6EB6966 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D069F8E18ED095C00AA8662 /* SDWebImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SDWebImage.framework; sourceTree = "<group>"; };
 		2D069F9018ED0E6800AA8662 /* iAd.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iAd.framework; path = System/Library/Frameworks/iAd.framework; sourceTree = SDKROOT; };
-		2D069F9518ED194A00AA8662 /* ImgurCellDetail.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImgurCellDetail.h; sourceTree = "<group>"; };
-		2D069F9618ED194A00AA8662 /* ImgurCellDetail.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImgurCellDetail.m; sourceTree = "<group>"; };
-		2D069F9A18ED3B2F00AA8662 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
+		2D390F4F190D0EBF005A1965 /* ImageItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageItem.h; sourceTree = "<group>"; };
+		2D390F50190D0EBF005A1965 /* ImageItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageItem.m; sourceTree = "<group>"; };
+		2D390F51190D0EBF005A1965 /* ImgurCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImgurCell.h; sourceTree = "<group>"; };
+		2D390F52190D0EBF005A1965 /* ImgurCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImgurCell.m; sourceTree = "<group>"; };
+		2D390F53190D0EBF005A1965 /* ImgurCellDetail.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImgurCellDetail.h; sourceTree = "<group>"; };
+		2D390F54190D0EBF005A1965 /* ImgurCellDetail.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImgurCellDetail.m; sourceTree = "<group>"; };
+		2D390F58190D0EC6005A1965 /* Main_iPhone.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main_iPhone.storyboard; sourceTree = "<group>"; };
+		2D390F59190D0EC6005A1965 /* Main_iPad.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main_iPad.storyboard; sourceTree = "<group>"; };
+		2D390F5C190D0ED0005A1965 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		2D390F5D190D0ED0005A1965 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		2D390F5E190D0ED0005A1965 /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		2D390F5F190D0ED0005A1965 /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
 		2D65525918BC480000F93A6B /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
 		2D65525A18BC480000F93A6B /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
 		2D65525D18BC486000F93A6B /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
@@ -67,23 +76,14 @@
 		2DCE307918B1D08000E3B050 /* Scenery-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Scenery-Prefix.pch"; sourceTree = "<group>"; };
 		2DCE307A18B1D08000E3B050 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		2DCE307B18B1D08000E3B050 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		2DCE307E18B1D08000E3B050 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
-		2DCE308018B1D08000E3B050 /* MainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
-		2DCE308118B1D08000E3B050 /* MainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 		2DCE308318B1D08000E3B050 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		2DCE308918B1D08000E3B050 /* SceneryTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SceneryTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2DCE308A18B1D08000E3B050 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		2DCE309218B1D08000E3B050 /* SceneryTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SceneryTests-Info.plist"; sourceTree = "<group>"; };
 		2DCE309418B1D08000E3B050 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		2DCE309618B1D08000E3B050 /* SceneryTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneryTests.m; sourceTree = "<group>"; };
-		2DCE30A018B1D1B500E3B050 /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
-		2DCE30A118B1D1B500E3B050 /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
 		2DCE30A518B1D2D600E3B050 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
-		2DCE30A718B1D38500E3B050 /* ImgurCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImgurCell.h; sourceTree = "<group>"; };
-		2DCE30A818B1D38500E3B050 /* ImgurCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImgurCell.m; sourceTree = "<group>"; };
 		2DCE30AD18B1D4C700E3B050 /* Constants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
-		2DCE30AE18B1D50000E3B050 /* ImageItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageItem.h; sourceTree = "<group>"; };
-		2DCE30AF18B1D50000E3B050 /* ImageItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageItem.m; sourceTree = "<group>"; };
 		2DEA10511902744E00A6566C /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		3525F9D4CB6F4714B4DBEB47 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -120,8 +120,8 @@
 		2D65525618BC47A200F93A6B /* View */ = {
 			isa = PBXGroup;
 			children = (
-				2DCE307D18B1D08000E3B050 /* Main_iPhone.storyboard */,
-				2D069F9918ED3B2F00AA8662 /* Main_iPad.storyboard */,
+				2D390F58190D0EC6005A1965 /* Main_iPhone.storyboard */,
+				2D390F59190D0EC6005A1965 /* Main_iPad.storyboard */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -129,10 +129,10 @@
 		2D65525718BC47AD00F93A6B /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				2DCE308018B1D08000E3B050 /* MainViewController.h */,
-				2DCE308118B1D08000E3B050 /* MainViewController.m */,
-				2DCE30A018B1D1B500E3B050 /* DetailViewController.h */,
-				2DCE30A118B1D1B500E3B050 /* DetailViewController.m */,
+				2D390F5C190D0ED0005A1965 /* MainViewController.h */,
+				2D390F5D190D0ED0005A1965 /* MainViewController.m */,
+				2D390F5E190D0ED0005A1965 /* DetailViewController.h */,
+				2D390F5F190D0ED0005A1965 /* DetailViewController.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -140,12 +140,12 @@
 		2D65525818BC47BE00F93A6B /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				2DCE30AE18B1D50000E3B050 /* ImageItem.h */,
-				2DCE30AF18B1D50000E3B050 /* ImageItem.m */,
-				2DCE30A718B1D38500E3B050 /* ImgurCell.h */,
-				2DCE30A818B1D38500E3B050 /* ImgurCell.m */,
-				2D069F9518ED194A00AA8662 /* ImgurCellDetail.h */,
-				2D069F9618ED194A00AA8662 /* ImgurCellDetail.m */,
+				2D390F4F190D0EBF005A1965 /* ImageItem.h */,
+				2D390F50190D0EBF005A1965 /* ImageItem.m */,
+				2D390F51190D0EBF005A1965 /* ImgurCell.h */,
+				2D390F52190D0EBF005A1965 /* ImgurCell.m */,
+				2D390F53190D0EBF005A1965 /* ImgurCellDetail.h */,
+				2D390F54190D0EBF005A1965 /* ImgurCellDetail.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -333,9 +333,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				2DCE308418B1D08000E3B050 /* Images.xcassets in Resources */,
-				2D069F9B18ED3B2F00AA8662 /* Main_iPad.storyboard in Resources */,
+				2D390F5B190D0EC6005A1965 /* Main_iPad.storyboard in Resources */,
 				2DCE307618B1D08000E3B050 /* InfoPlist.strings in Resources */,
-				2DCE307F18B1D08000E3B050 /* Main_iPhone.storyboard in Resources */,
+				2D390F5A190D0EC6005A1965 /* Main_iPhone.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -387,15 +387,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2DCE308218B1D08000E3B050 /* MainViewController.m in Sources */,
-				2DCE30A918B1D38500E3B050 /* ImgurCell.m in Sources */,
 				2D65526118BC48E600F93A6B /* NetworkChecker.m in Sources */,
+				2D390F55190D0EBF005A1965 /* ImageItem.m in Sources */,
+				2D390F61190D0ED0005A1965 /* DetailViewController.m in Sources */,
 				2DCE307C18B1D08000E3B050 /* AppDelegate.m in Sources */,
+				2D390F60190D0ED0005A1965 /* MainViewController.m in Sources */,
 				2D65525B18BC480000F93A6B /* Reachability.m in Sources */,
-				2DCE30A218B1D1B500E3B050 /* DetailViewController.m in Sources */,
-				2DCE30B018B1D50000E3B050 /* ImageItem.m in Sources */,
+				2D390F56190D0EBF005A1965 /* ImgurCell.m in Sources */,
 				2DCE307818B1D08000E3B050 /* main.m in Sources */,
-				2D069F9718ED194A00AA8662 /* ImgurCellDetail.m in Sources */,
+				2D390F57190D0EBF005A1965 /* ImgurCellDetail.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -418,28 +418,12 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		2D069F9918ED3B2F00AA8662 /* Main_iPad.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				2D069F9A18ED3B2F00AA8662 /* Base */,
-			);
-			name = Main_iPad.storyboard;
-			sourceTree = "<group>";
-		};
 		2DCE307418B1D08000E3B050 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
 				2DCE307518B1D08000E3B050 /* en */,
 			);
 			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		2DCE307D18B1D08000E3B050 /* Main_iPhone.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				2DCE307E18B1D08000E3B050 /* Base */,
-			);
-			name = Main_iPhone.storyboard;
 			sourceTree = "<group>";
 		};
 		2DCE309318B1D08000E3B050 /* InfoPlist.strings */ = {

@@ -11,8 +11,6 @@
 @interface ImgurCell : UICollectionViewCell
 @property (strong, nonatomic) IBOutlet UIImageView *thumbnailImage;
 @property (strong, nonatomic) IBOutlet UIActivityIndicatorView *activityIndicator;
-
-
 @property (strong, nonatomic) NSString *url;
 
 - (void)setupActivityIndicator;

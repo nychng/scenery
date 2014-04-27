@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5053" systemVersion="13C64" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="Xzh-Vk-BFO">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13C1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="Xzh-Vk-BFO">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
     </dependencies>
@@ -23,7 +23,7 @@
             </objects>
             <point key="canvasLocation" x="-5" y="39"/>
         </scene>
-        <!--Main View Controller - scenery-->
+        <!--Main View Controller-->
         <scene sceneID="33B-aw-Ma1">
             <objects>
                 <collectionViewController autoresizesArchivedViewToFullSize="NO" id="qUX-q7-2pI" customClass="MainViewController" sceneMemberID="viewController">
@@ -68,7 +68,7 @@
                             <outlet property="delegate" destination="qUX-q7-2pI" id="SU3-i8-tFE"/>
                         </connections>
                     </collectionView>
-                    <navigationItem key="navigationItem" title="scenery" id="rzL-tR-j8u"/>
+                    <navigationItem key="navigationItem" id="rzL-tR-j8u"/>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dB2-aX-8fy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -95,19 +95,12 @@
                                     <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView userInteractionEnabled="NO" tag="100" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zaO-uc-J1u">
+                                        <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yVM-Ky-aoQ">
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                        </imageView>
-                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="characterWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="320" translatesAutoresizingMaskIntoConstraints="NO" id="qNv-rw-Lm1">
-                                            <rect key="frame" x="0.0" y="526" width="320" height="17"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                        <activityIndicatorView opaque="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="cZw-IS-I0j">
-                                            <rect key="frame" x="142" y="243" width="37" height="37"/>
+                                        </scrollView>
+                                        <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="DRN-KQ-5wI">
+                                            <rect key="frame" x="141" y="266" width="37" height="37"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         </activityIndicatorView>
                                     </subviews>
@@ -115,16 +108,16 @@
                                 </view>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="centerX" secondItem="cZw-IS-I0j" secondAttribute="centerX" id="Dzv-iI-Adx"/>
-                                    <constraint firstAttribute="trailing" secondItem="qNv-rw-Lm1" secondAttribute="trailing" id="Z9b-Ta-KdS"/>
-                                    <constraint firstItem="qNv-rw-Lm1" firstAttribute="leading" secondItem="2mk-BP-cLx" secondAttribute="leading" id="aAg-yG-rXc"/>
-                                    <constraint firstAttribute="bottom" secondItem="qNv-rw-Lm1" secondAttribute="bottom" constant="25" id="qZb-GB-VNS"/>
-                                    <constraint firstAttribute="centerY" secondItem="cZw-IS-I0j" secondAttribute="centerY" constant="22.5" id="wkW-cF-CE3"/>
+                                    <constraint firstAttribute="trailing" secondItem="yVM-Ky-aoQ" secondAttribute="trailing" id="1bM-tK-ozt"/>
+                                    <constraint firstItem="yVM-Ky-aoQ" firstAttribute="leading" secondItem="2mk-BP-cLx" secondAttribute="leading" id="F9b-hJ-Dbj"/>
+                                    <constraint firstAttribute="centerY" secondItem="DRN-KQ-5wI" secondAttribute="centerY" id="OFf-M9-q7c"/>
+                                    <constraint firstAttribute="centerX" secondItem="DRN-KQ-5wI" secondAttribute="centerX" id="TkK-aX-Pcp"/>
+                                    <constraint firstAttribute="bottom" secondItem="yVM-Ky-aoQ" secondAttribute="bottom" id="akV-wK-Tpw"/>
+                                    <constraint firstItem="yVM-Ky-aoQ" firstAttribute="top" secondItem="2mk-BP-cLx" secondAttribute="top" id="b07-ya-CnH"/>
                                 </constraints>
                                 <connections>
-                                    <outlet property="activityIndicator" destination="cZw-IS-I0j" id="NoE-fq-CIV"/>
-                                    <outlet property="imageView" destination="zaO-uc-J1u" id="wdQ-SC-gdZ"/>
-                                    <outlet property="title" destination="qNv-rw-Lm1" id="9pE-8j-ki2"/>
+                                    <outlet property="activityIndicator" destination="DRN-KQ-5wI" id="oy5-tF-tym"/>
+                                    <outlet property="scrollView" destination="yVM-Ky-aoQ" id="FYc-iI-92i"/>
                                 </connections>
                             </collectionViewCell>
                         </cells>
@@ -135,9 +128,9 @@
                     </collectionView>
                     <extendedEdge key="edgesForExtendedLayout" top="YES"/>
                     <navigationItem key="navigationItem" id="1Bn-HG-h3F">
-                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="odb-Mn-yDu">
+                        <barButtonItem key="rightBarButtonItem" systemItem="action" id="e6I-tJ-vTc">
                             <connections>
-                                <action selector="saveButton:" destination="DXv-pN-Gko" id="V0B-l1-S6j"/>
+                                <action selector="showActionSheet:" destination="DXv-pN-Gko" id="3Z6-Pk-8VU"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
