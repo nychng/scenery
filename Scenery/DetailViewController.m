@@ -112,11 +112,6 @@
     cell.url = image.url;
     cell.commentURL = image.commentURL;
     
-    if (cell.activityIndicator) {
-        [cell.activityIndicator removeFromSuperview];
-    }
-    [cell setupActivityIndicator];
-    
     cell.imageView = [[UIImageView alloc] init];
 
     if ([NetworkChecker hasConnectivity]) {
@@ -125,7 +120,9 @@
                   placeholderImage:nil
                            options:SDWebImageProgressiveDownload
                           progress:^(NSInteger receivedSize, NSInteger expectedSize) {
+                              [weakCell setupActivityIndicator];
                               [weakCell.activityIndicator startAnimating];
+                              
                           }
                          completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType) {
                              [weakCell.activityIndicator stopAnimating];
